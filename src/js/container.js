@@ -1,15 +1,19 @@
-import image4 from '../images/image4.png';
 import image5 from '../images/image5.png';
-import image6 from '../images/image6.jpg';
-import image1 from '../images/image1.png';
 import image3 from '../images/image3.png';
 import image2 from '../images/image2.png';
+import steve from '../images/shteve.PNG';
+import alGore from '../images/al-gore.png';
+import batman from '../images/batman-img.png';
+import user from '../images/random-icon.png';
 
 const container = {
   targets: {
     heroImgContainer: document.querySelector('.hero__img--container'),
     heroCardImg: document.querySelector('.hero__card--img'),
-    featureGrid: document.querySelector('.feature__grid')
+    featureGrid: document.querySelector('.feature__grid'),
+    sliderContainer: document.querySelector('.slider__container'),
+    next: document.querySelector('.next'),
+    prev: document.querySelector('.previous')
   },
   features: [
     {
@@ -35,6 +39,38 @@ const container = {
       img: image5,
       copy: 'Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so onl you can open the file',
       btnTxt: 'Learn More'
+    },
+  ],
+  slides: [
+    {
+      name: 'John Fang',
+      img: user,
+      website: 'wordfaang.com',
+      copy: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+    },
+    {
+      name: 'Neil Young',
+      img: steve,
+      website: 'keeponrockininthefreeworld.com',
+      copy: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+    },
+    {
+      name: 'Batman',
+      img: batman,
+      website: 'whereisrachel.com',
+      copy: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+    },
+    {
+      name: 'Al Gore',
+      img: alGore,
+      website: 'manbearpigisreal.com',
+      copy: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
+    },
+    {
+      name: 'Al Gore',
+      img: alGore,
+      website: 'manbearpigisreal.com',
+      copy: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
     },
   ]
 }

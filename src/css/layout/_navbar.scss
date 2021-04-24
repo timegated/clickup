@@ -1,9 +1,17 @@
 .navigation {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  background-color: _palette(bg);
+  z-index: 1000;
+  padding-bottom: 2.5rem;
+  
+  &__container {  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-
   button {
     margin-top: 0.75rem;
     cursor: pointer;
@@ -21,7 +29,6 @@
       margin-left: 1.5rem; 
     }
   }
-
   @include respond-to('xs') {
     flex-direction: row;
     justify-content: space-around;
@@ -29,4 +36,7 @@
       flex-direction: row;
     }
   }
+  }
+ 
+
 }

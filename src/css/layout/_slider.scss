@@ -1,0 +1,116 @@
+.slider {
+  background-color: _palette(purpledark);
+  border-radius: _border(rounded_xlarge);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 0.5rem _palette(purpledark);
+  h2 {
+    color: _palette(bg);
+    padding: 5rem 2rem;
+    font-size: _fontsize(xxlarge);
+    text-align: left;
+    margin-left: 8rem;
+  }
+  
+  .slider__container {
+    overflow: hidden;
+    position: relative;
+    width: 65%;
+    height: 350px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    .slide {
+      transform: translate(-100%, 0);
+      transition: transform .8s ease;
+      background-color: _palette(bg);
+      border-radius: _border(rounded_large);
+      position: absolute;
+      padding-bottom: 2.5rem;
+      &.active {
+        transform: translate(0,0);
+
+        &~.slide {
+          transform: translate(100%, 0);
+        }
+      }
+      
+      img {
+        width: 100%;
+      }
+      .slide__content {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+
+        .slide__content--row {
+          display: flex;
+        }
+      }
+      .slide__content--title {
+        max-width: 30%;
+        padding: 1.25rem;
+       
+        span {
+          display: block;
+          color: _palette(textdark);
+          margin: 0;
+          font-weight: _fontweight(bolder);
+        }
+      }
+      
+      .slide__content--copy {
+        max-width: 75%;
+        margin: auto;
+        p {
+          padding: 1.65rem;
+        }
+      }
+      .slide__content--image {
+        width: 75px;
+        height: 75px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .previous {
+      color: _palette(bg);
+      > i {
+        &::before {
+          font-size: _fontsize(xlarge);
+          color: _palette(bg);
+        }
+      }
+    }
+    .next {
+      color: _palette(bg);
+      > i {
+        &::before {
+          font-size: _fontsize(xlarge);
+          color: _palette(bg);
+        }
+      }
+    }
+
+    .previous, .next {
+      width: 100px;
+      display: inline-block;
+      cursor: pointer;
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+    }
+  }
+}

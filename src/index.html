@@ -10,13 +10,16 @@
 
 <body>
   <nav class="navigation">
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Signup</a></li>
-    </ul>
-    <button class="demo-btn">Request Demo <i class="fas fa-arrow-right"></i></button>
+    <div class="navigation__container">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Signup</a></li>
+      </ul>
+      <button class="demo-btn">Request Demo <i class="fas fa-arrow-right"></i></button>
+    </div>
+
   </nav>
   <main>
     <section class="hero">
@@ -66,15 +69,15 @@
         <!-- using JS to generate the individual cards -->
       </div>
     </section><!-- end features section -->
-    <section class="testimonials">
+    <section class="slider">
       <h2>Testimonials</h2>
-      <div class="testimonials__content">
-        <div class="slider">
-            <div class="slider__container">
-              
-            </div>
+        <div class="slider__container">
+          <!-- rendered with js -->
         </div>
-      </div>
+        <div class="slider__controls">
+          <span class="previous"><i class="fas fa-arrow-left"></i></span>
+          <span class="next"><i class="fas fa-arrow-right"></i></span>
+        </div>
     </section>
   </main>
   <footer class="footer">
@@ -122,13 +125,12 @@
       </div>
       <div class="column">
         <h5>Social</h5>
-        <div class="row">
-          <ul>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
+        <ul class="row">
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
 
       </div>
     </section>
