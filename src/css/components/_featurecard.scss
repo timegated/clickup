@@ -1,0 +1,17 @@
+.feature__grid {
+  > section {
+      &:nth-child(2) > .content {
+        background-color: _palette(cyanlight);
+      }
+      &:nth-child(3) > .content {
+        background-color: _palette(cyanlight);
+      }
+
+      .content {
+        border-radius: _border(rounded_large);
+        background-color: _palette(pinklight);
+      }
+   
+  }
+  
+}

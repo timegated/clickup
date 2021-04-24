@@ -1,0 +1,11 @@
+.feature--btn {
+  border: 0;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  background: transparent;
+
+  > i {
+    margin-left: 1.5rem;
+  }
+}

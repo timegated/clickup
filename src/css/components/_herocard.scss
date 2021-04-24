@@ -1,0 +1,17 @@
+.hero__card {
+  margin: 5rem auto;
+  background: _palette(pinklight);
+  padding: 1.65rem;
+  border-radius: _border(rounded_large);
+  max-width: 50%;
+  align-self: center;
+
+  &--title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  &--text {
+    line-height: 1.5rem;
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .hero__area--one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond-to('md') {
+      flex-direction: row;
+    }
+
+  .hero__copy {
+    max-width: 100%;
+
+    &--title {
+      font-size: 48px;
+    }
+
+    @include respond-to('md') {
+      max-width: 30%
+    }
+  }
+
+  }
+
+  .hero__area--two {
+    flex: 1;
+
+    .hero__card {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
