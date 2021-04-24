@@ -1,3 +1,15 @@
+:root {
+  font-size: 0.75em;
+
+  @include respond-to('sm') {
+    font-size: .875rem;
+  }
+
+  @include respond-to('md') {
+    font-size: 1rem;
+  }
+}
+
 html, body, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +23,7 @@ html, body {
 
 main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 12rem auto;
 }
 
 a {
@@ -28,9 +40,6 @@ a {
     color: _palette(textdark);
   }
 
-  &:visited {
-    color: _palette(textdark);
-  }
 };
 
 ul {

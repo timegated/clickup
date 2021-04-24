@@ -72,3 +72,7 @@
 @function  _fontweight($keys...) {
 	@return val($fontweight, $keys...);
 }
+
+@function _fontsize($keys...) {
+	@return val($fontsize, $keys...);
+}
