@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .footer__area--top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  .footer__area--bottom {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    .footer__area--info {
+      display: flex;
+      flex-direction: column;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+ 
+}
