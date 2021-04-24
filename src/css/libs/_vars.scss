@@ -1,6 +1,7 @@
 $palette: (
   textdark: hsl(210, 24%, 16%),
   textlight: hsl(210, 16%, 82%),
+  textlessdark: hsl(211, 12%, 43%),
   bg: hsl(216, 33%, 97%),
   pinklight: hsl(341, 100%, 95%),
   pinkld: hsl(336, 100%, 77%),
@@ -10,4 +11,23 @@ $palette: (
   purpledark: hsl(261, 47%, 58%),
   bluelight: hsl(205, 79%, 92%),
   cyanlight: hsl(186, 100%, 94%)
+);
+
+$border: (
+  rounded: 10px,
+  rounded_md: 20px,
+  rounded_large: 30px,
+);
+
+$size: (
+  sm: 1.5rem,
+  md: 2rem,
+  lg: 2.5rem
+);
+
+$fontweight: (
+  light: 300,
+  regular: 500,
+  bolder: 600,
+  bold: 800
 );

@@ -17,11 +17,28 @@ main {
 a {
   text-decoration: none;
   font-weight: 600;
-  color: _palette(textdark);
+  color: _palette(textlight);
+
+  &:hover {
+    color: _palette(textdark);
+    transition: color 0.2s ease-in;
+  }
+
+  &:active {
+    color: _palette(textdark);
+  }
+
+  &:visited {
+    color: _palette(textdark);
+  }
 };
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+i {
+  color: _palette(purplelight);
 }

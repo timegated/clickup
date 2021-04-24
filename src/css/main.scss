@@ -1,6 +1,7 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:ital,wght@1,300&display=swap');// libs
 @import 'libs/breakpoints';
+@import 'libs/demobtn';
 @import 'libs/functions';
 @import 'libs/vars';
 
@@ -14,6 +15,7 @@
 // Components
 @import 'components/navbar';
 @import 'components/demobtn';
+@import 'components/button';
 
 
 

@@ -1,0 +1,8 @@
+@mixin clickup-btn($bg) {
+  border-radius: _border(rounded_large);
+  padding: 0.85em;
+  border: 0;
+  background-color: $bg;
+  box-shadow: 0 1px .4em _palette(textdark);
+  font-weight: 600;
+}

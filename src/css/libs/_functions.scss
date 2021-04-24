@@ -60,3 +60,15 @@
 @function _palette($keys...) {
 	@return val($palette, $keys...);
 }
+
+@function _border($keys...) {
+	@return val($border, $keys...);
+}
+
+@function _size($keys...) {
+	@return val($size, $keys...);
+}
+
+@function  _fontweight($keys...) {
+	@return val($fontweight, $keys...);
+}
