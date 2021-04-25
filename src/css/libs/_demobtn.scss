@@ -2,7 +2,7 @@
   border-radius: _border(rounded_large);
   padding: 0.85em;
   border: 0;
-  background-color: _palette(bg);
+  background-color: $bg;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }

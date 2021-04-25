@@ -1,3 +1,8 @@
 .btn {
   @include clickup-btn(_palette(pinkld));
 }
+
+.header-btn {
+  color: _palette(bg);
+  @include clickup-btn(_palette(purpledark));
+}
