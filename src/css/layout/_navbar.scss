@@ -28,12 +28,16 @@
     li:not(first-child) {
       margin-left: 1.5rem; 
     }
+    li > a {
+      font-size: _fontsize(xlarge);
+    }
   }
   @include respond-to('xs') {
     flex-direction: row;
     justify-content: space-around;
     ul {
       flex-direction: row;
+     
     }
   }
   }

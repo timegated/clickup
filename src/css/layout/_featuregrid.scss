@@ -1,7 +1,7 @@
 .feature__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
   margin-top: 12rem;
   margin-bottom: 12rem;
 
@@ -9,7 +9,9 @@
     display: flex;
 
     img {
-     margin-top: 1.5rem;
+     width: 100%;
+     height: 50%;
+     margin-top: 8rem;
      margin-right: -35px;
      z-index: 999;
     }
@@ -17,7 +19,6 @@
     .content {
       display: flex;
       flex-direction: column;
-      padding: 5rem 5rem 5rem 8rem;
       max-width: 100%;
     }
   }
