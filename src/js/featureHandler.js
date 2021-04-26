@@ -3,7 +3,7 @@ export const featureHandler = (target, arr) => {
     ${arr.map(feature => {
       return `
         <section>
-          <img src=${feature.img} alt=${feature.title} width=232 />
+          <img src=${feature.img} alt=${feature.title} width=241 height=185 />
           <div class="content">
             <h2>${feature.title}</h2>
             <p>${feature.copy}</p>

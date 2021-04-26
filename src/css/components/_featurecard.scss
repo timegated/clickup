@@ -1,17 +1,23 @@
 .feature__grid {
   > section {
-   
+    &:nth-child(1) > .content {
+        background-color: _palette(cyanlight);
+      }
     &:nth-child(2) > .content {
-        background-color: _palette(cyanlight);
+        background-color: _palette(purplelight);
       }
-      &:nth-child(3) > .content {
-        background-color: _palette(cyanlight);
-      }
+    &:nth-child(3) > .content {
+        background-color: _palette(pinkld);
+    }
+    &:nth-child(4) > .content {
+        background-color: _palette(bluelight);
+    }
 
       .content {
         border-radius: _border(rounded_large);
+        clip-path: polygon(0 100%, 100% 100%, 100% -500%, 15% -5%, 11% 3%, 11% 4%, 8% 30%, 0 100%);
         background-color: _palette(pinklight);
-        padding: 2.75rem;
+        padding: 2.75rem 10rem;
         margin: 1.25rem;
 
         h2 {
@@ -19,12 +25,14 @@
           padding-left: 1.75rem;
           padding-right: 1.75rem;
           padding-bottom: 0;
+          opacity: 1;
         }
         p {
           padding-right: 1.75rem;
           padding-left: 1.75rem;
           padding-top: 0;
           padding-bottom: 0;
+          line-height: 30px;
         }
         .btn__container {
           @include btnContain(100%);

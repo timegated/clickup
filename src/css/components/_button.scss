@@ -1,5 +1,5 @@
 .btn {
-  @include clickup-btn(_palette(pinkld));
+  @include clickup-btn(_palette(pinkdark));
   color: _palette(bg);
   padding-left: 1.75rem;
   padding-right: 1.75rem;
