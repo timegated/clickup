@@ -6,12 +6,12 @@
   flex-direction: column;
   box-shadow: 0px 8px 0.5rem _palette(purpledark);
   max-width: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
   @include respond-to('large') {
     max-width: 65%;
     margin: 0 auto;
   }
-  
+
   h2 {
     color: _palette(bg);
     padding: 4rem 3rem 2rem;

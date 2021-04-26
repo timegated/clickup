@@ -5,13 +5,26 @@ html, body, *:before, *:after {
 }
 
 html, body {
+  width: 100%;
+  min-height: 100vh;
   font-family: 'Nunito', sans-serif;
   color: _palette(textdark);
 };
 
 main {
+  display: flex;
+  max-width: 100%;
+  margin-top: 50vh;
+  @include respond-to('large') {
+    max-width: 1800px;
+    margin-top: 10rem;
+  }
+  
+}
+
+.content__container {
   max-width: 1800px;
-  margin: 12rem auto;
+  margin: 0 auto;
 }
 
 h5 {

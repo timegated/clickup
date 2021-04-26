@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 50vh;
-  width: 100%;
   @include respond-to('md') {
     margin-top: 5rem;
   }
@@ -16,7 +15,6 @@
     margin: 0 auto;
   
   .hero__img--container {
-    max-width: 100%;
 
     @include respond-to('large') {
       margin-left: -250px;
@@ -24,7 +22,6 @@
     }
   }
   .hero__copy {
-    max-width: 100%;
     text-align: center;
     &--title {
       font-size:_fontsize(title);
@@ -61,19 +58,14 @@
   .hero__area--two {
     flex: 1;
     margin-top: 20vh;
-    max-width: 100%;
     .hero__card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 100%;
       @include respond-to('large') {
         flex-direction: row;
-        max-width: 75%;
-      }
-      &--copy {
-        max-width: 100%;
+        max-width: 65%;
       }
       &--title {
         font-size: _fontsize(title);

@@ -22,8 +22,12 @@
     cursor: pointer;
     border: none;
     background: transparent;
-    font-size: _fontsize(reg);
+    font-size: _fontsize(xxlarge);
     font-weight: _fontweight(bolder);
+
+    @include respond-to('md') {
+      font-size: _fontsize(reg);
+    }
   }
 
   ul {
@@ -34,14 +38,20 @@
     align-items: baseline;
     list-style: none;
     li:not(first-child) {
-      margin-left: 1.5rem; 
+      margin-top: 2.5rem;
+      @include respond-to('large') {
+        margin-left: 1.5rem;
+      }
     }
     li > a {
-      font-size: _fontsize(xxlarge);
+      font-size: _fontsize(large);
       line-height: 50px;
+      @include respond-to('md') {
+        font-size: _fontsize(xxlarge)
+      }
     }
   }
-  @include respond-to('xs') {
+  @include respond-to('md') {
     flex-direction: row;
     justify-content: space-around;
     .navigation__inner {

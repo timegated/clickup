@@ -1,23 +1,24 @@
 .hero__card {
-  margin: 5rem auto;
+  margin: 0 auto;
   background: _palette(pinklight);
   padding: 5rem 0;
   border-radius: _border(rounded_large);
-  max-width: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   align-self: center;
-
   &--title {
-    font-size: 2rem;
-    margin: 0 3rem;
-    padding: 0 3.5rem;
+    @include respond-to('md') {
+      font-size: 2rem;
+      margin: 0 3rem;
+      padding: 0 3.5rem;
+    }
+    
   }
   
   &--text {
-    line-height: 1.5rem;
-    padding: 0 3.5rem;
-    margin: 0 3rem;
+    @include respond-to('md') {
+      line-height: 1.5rem;
+      padding: 0 3.5rem;
+      margin: 0 3rem;
+    
+    }
   }
 }
