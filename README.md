@@ -25,3 +25,7 @@ Also webpack for achieving this organization as far as bundling any assets relat
 - Webpack
 - Sass
 - JS
+
+
+### To Run Locally
+yarn install && yarn start

@@ -1,5 +1,4 @@
 .footer {
-  // position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -38,6 +37,7 @@
     padding: 6rem;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     
     @include respond-to('large') {
       margin-left: 6rem;
