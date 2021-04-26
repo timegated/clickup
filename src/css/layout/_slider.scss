@@ -6,6 +6,7 @@
   flex-direction: column;
   box-shadow: 0px 8px 0.5rem _palette(purpledark);
   max-width: 100%;
+  margin: 0 auto;
   @include respond-to('large') {
     max-width: 65%;
     margin: 0 auto;
@@ -24,9 +25,12 @@
     width: 65%;
     height: 350px;
     margin: 0 auto;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
     display: flex;
     flex-direction: column;
+    @include respond-to('large') {
+      padding-bottom: 10rem;
+    }
     .slide {
       transform: translate(-100%, 0);
       transition: transform .8s ease;

@@ -38,10 +38,11 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
+
     @include respond-to('large') {
       margin-left: 6rem;
       margin-right: 6rem;
+      flex-direction: row;
     }
     
     .footer__logo{ 
