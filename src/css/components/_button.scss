@@ -1,8 +1,21 @@
 .btn {
   @include clickup-btn(_palette(pinkld));
+  color: _palette(bg);
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header-btn {
   color: _palette(bg);
+  padding: 0 2.75rem;
   @include clickup-btn(_palette(purpledark));
+  font-size: _fontsize(xxlarge);
+  @include respond-to('xs') {
+    font-size: _fontsize(large);
+  }
+  @include respond-to('md') {
+    font-size: _fontsize(large);
+  }
 }

@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
@@ -30,6 +30,7 @@
 
     button {
       border: 0;
+      font-weight: _fontweight(bolder);
     }
   }
   .footer__bottom {
@@ -37,9 +38,41 @@
     padding: 6rem;
     display: flex;
     justify-content: space-around;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    .footer__logo{ 
+      display: flex;
+      align-items: baseline;
+
+
+      h3 {
+        margin-left: 1.25rem;
+      }
+    }
     .footer__info {
       display: flex;
       flex-direction: column;
+
+      .footer__address {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+          margin-bottom: 1.25rem;
+        }
+        span {
+          line-height: 30px;
+        }
+      }
+
+      .footer__email {
+        display: flex;
+        flex-direction: column;
+        
+        span {
+          line-height: 30px;
+        }
+      }
     }
     .column {
       display: flex;

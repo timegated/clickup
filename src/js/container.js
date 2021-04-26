@@ -15,6 +15,8 @@ const container = {
     sliderContainer: document.querySelector('.slider__container'),
     logoImageOne: document.querySelector('.logo__image--one'),
     logoImageTwo: document.querySelector('.logo__image--two'),
+    footerImageOne: document.querySelector('.footer__image--one'),
+    footerImageTwo: document.querySelector('.footer__image--two'),
     next: document.querySelector('.next'),
     prev: document.querySelector('.previous')
   },

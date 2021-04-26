@@ -6,20 +6,14 @@
   background-color: _palette(bg);
   z-index: 1000;
   padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
 
   &__container {  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: baseline;
-  .logo {
-    &__image--one {
-      margin-right: 0.25rem;
-    }
-    &__image--two {
-      margin-left: 1.25rem;
-    }
-  }
+
   .btn__container--navigation {
     @include clickup-btn(_palette(bg));
   }
@@ -43,18 +37,26 @@
       margin-left: 1.5rem; 
     }
     li > a {
-      font-size: _fontsize(xlarge);
+      font-size: _fontsize(xxlarge);
+      line-height: 30px;
     }
   }
   @include respond-to('xs') {
     flex-direction: row;
     justify-content: space-around;
+    .navigation__inner {
+      display: flex;
+      align-items: center;
+      margin-left: 6rem;
+    }
     ul {
+      margin-left: 8rem;
       flex-direction: row;
-     
+      li > a {
+        line-height: none;
+        font-size: _fontsize(large);
+      }
     }
   }
   }
- 
-
 }

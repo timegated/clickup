@@ -2,28 +2,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 30vh;
+
+  @include respond-to('md') {
+    margin-top: 5rem;
+  }
 
   .hero__area--one {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include respond-to('md') {
-      flex-direction: row;
-    }
 
-  .hero__copy {
+  
+  .hero__img--container {
     max-width: 100%;
 
+    @include respond-to('md') {
+      margin-left: -250px;
+      margin-bottom: -250px;
+    }
+  }
+  .hero__copy {
+    max-width: 100%;
+    text-align: center;
     &--title {
-      font-size: 48px;
+      font-size:_fontsize(title);
+        @include respond-to('md') {
+        }
+    }  
+
+    &--text {
+      font-size: _fontsize(xxlarge);
+      font-weight: _fontweight(regular);
+      line-height: 50px;
+      margin-top: 0;
+      text-align: center;
+      @include respond-to('md') {
+        font-size: _fontsize(reg);
+        line-height: 30px;
+        margin-bottom: 2.5rem;
+        margin-right: 15rem;
+      }
     }
 
     @include respond-to('md') {
-      max-width: 30%
+      max-width: 30%;
+      text-align: left;
     }
   }
-
+  @include  respond-to('md') {
+    flex-direction: row;
+  }
   }
 
   .hero__area--two {

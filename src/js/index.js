@@ -13,10 +13,12 @@ import '../css/main.scss';
 // used to generate dom elements
 const { targets, features, slides } = container;
 // hero images
-imageHandler(targets.heroImgContainer, heroImg, 500, 250);
+imageHandler(targets.heroImgContainer, heroImg, 885, 468);
 imageHandler(targets.heroCardImg, cardImg, 250, 250);
 imageHandler(targets.logoImageOne, logo1, 20, 20);
-imageHandler(targets.logoImageOne, logo2, 20, 35);
+imageHandler(targets.logoImageTwo, logo2, 20, 35);
+imageHandler(targets.footerImageOne, logo1, 20, 20);
+imageHandler(targets.footerImageTwo, logo2, 20, 35);
 // feature grid
 featureHandler(targets.featureGrid, features);
 
