@@ -5,7 +5,7 @@ html, body, *:before, *:after {
 }
 
 html, body {
-  font-family: 'Monsterrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: _palette(textdark);
 };
 
@@ -14,9 +14,13 @@ main {
   margin: 12rem auto;
 }
 
+h5 {
+  font-size: _fontsize(reg);
+}
+
 a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: _fontweight(regular);
   color: _palette(textlessdark);
 
   &:hover {

@@ -38,17 +38,21 @@
     padding: 6rem;
     display: flex;
     justify-content: space-around;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    
+    @include respond-to('large') {
+      margin-left: 6rem;
+      margin-right: 6rem;
+    }
+    
     .footer__logo{ 
       display: flex;
       align-items: baseline;
-
 
       h3 {
         margin-left: 1.25rem;
       }
     }
+
     .footer__info {
       display: flex;
       flex-direction: column;
@@ -56,6 +60,7 @@
       .footer__address {
         display: flex;
         flex-direction: column;
+        font-weight: _fontweight(bolder);
 
         &:first-child {
           margin-bottom: 1.25rem;
@@ -77,10 +82,19 @@
     .column {
       display: flex;
       flex-direction: column;
+      ul > li {
+        line-height: 50px;
+      }
     }
     .row {
       display: flex;
       flex-direction: row;
+      li > a:not(first-child) {
+        margin: 0 0.5rem;
+        span {
+          font-size: 48px;
+        }
+      }
       
     }
   }

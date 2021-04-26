@@ -32,13 +32,12 @@
     flex-direction: column;
     align-items: baseline;
     list-style: none;
-
     li:not(first-child) {
       margin-left: 1.5rem; 
     }
     li > a {
       font-size: _fontsize(xxlarge);
-      line-height: 30px;
+      line-height: 50px;
     }
   }
   @include respond-to('xs') {
