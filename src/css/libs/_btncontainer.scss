@@ -1,0 +1,9 @@
+@mixin btnContain($val) {
+  max-width: $val;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  span{
+    display: block;
+  }
+}

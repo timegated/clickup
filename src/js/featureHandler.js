@@ -7,7 +7,10 @@ export const featureHandler = (target, arr) => {
           <div class="content">
             <h2>${feature.title}</h2>
             <p>${feature.copy}</p>
-            <button class="feature--btn">${feature.btnTxt}<i class="fas fa-arrow-right"></i></button>
+            <div class="btn__container">
+            <button class="feature--btn">${feature.btnTxt}</button>
+            <span class="fas fa-arrow-right purple"></span>
+            </div>
           </div>
         </section>
       `

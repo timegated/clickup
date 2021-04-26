@@ -6,15 +6,29 @@
   background-color: _palette(bg);
   z-index: 1000;
   padding-bottom: 2.5rem;
-  
+
   &__container {  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+  .logo {
+    &__image--one {
+      margin-right: 0.25rem;
+    }
+    &__image--two {
+      margin-left: 1.25rem;
+    }
+  }
+  .btn__container--navigation {
+    @include clickup-btn(_palette(bg));
+  }
   button {
     margin-top: 0.75rem;
     cursor: pointer;
+    border: none;
+    font-size: _fontsize(reg);
+    font-weight: _fontweight(bolder);
   }
 
   ul {

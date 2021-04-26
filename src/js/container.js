@@ -13,6 +13,8 @@ const container = {
     heroCardImg: document.querySelector('.hero__card--img'),
     featureGrid: document.querySelector('.feature__grid'),
     sliderContainer: document.querySelector('.slider__container'),
+    logoImageOne: document.querySelector('.logo__image--one'),
+    logoImageTwo: document.querySelector('.logo__image--two'),
     next: document.querySelector('.next'),
     prev: document.querySelector('.previous')
   },
@@ -20,7 +22,7 @@ const container = {
     {
       title: 'Search Data',
       img: image3,
-      copy: 'Don\'t worry if your data is very large, the Data Warehouse provides a search engine, whic is useful for making it easier to find data effectively saving time.',
+      copy: 'Don\'t worry if your data is very large, the Data Warehouse provides a search engine, whic is useful for making it easier to find data effectively saving time.', 
       btnTxt: 'Learn More'
     },
     {
