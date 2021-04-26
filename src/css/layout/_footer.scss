@@ -25,12 +25,15 @@
     .btn__container {
       margin-left: 1.25rem;
       @include clickup-btn(_palette(bg));
+      
+      button {
+        border: 0;
+        font-weight: _fontweight(bolder);
+        background: transparent;
+      }
     }
 
-    button {
-      border: 0;
-      font-weight: _fontweight(bolder);
-    }
+    
   }
   .footer__bottom {
     margin-top: 5rem;
